@@ -42,7 +42,7 @@ shinyUI(dashboardPage(skin = "black",
               leafletOutput("map", height = 670),
               #add panel to filter data
               absolutePanel(id = "controls", class = "panel panel-default", fixed = TRUE,
-                            draggable = FALSE, top = 100, right = 20,bottom = "auto",
+                            draggable = FALSE, top = 125, right = 20,bottom = "auto",
                             width = 360, height = '100%'
                     ,
                     selectInput("age.group", "Select age group",choices =  Age.Group, selected = '15-25')

@@ -10,9 +10,9 @@ library(rgdal)
 
 
 #load dataset to R
-filename=list.files('./bike/',pattern = '*.csv')
+filename=list.files('./',pattern = '*.csv')
 handle_each = function(x){
-  x=paste0('./bike/',x)
+  x=paste0('./',x)
   temp = fread(input = x,
                head = TRUE,
                col.names=c('trip.dur','T','stop.T','id',
